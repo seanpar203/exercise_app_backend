@@ -26,10 +26,8 @@ SECRET_KEY = 'django-insecure-lw4u1mr*&2y96&^hyl&$nmj%@0d^l-!!g=m9(ldb3txm0+$@eq
 DEBUG = True
 
 # BEFORE
-# ALLOWED_HOSTS = ["*"] 
-# 
-# AFTER 
-ALLOWED_HOSTS = [".awsapprunner.com"]
+ALLOWED_HOSTS = ["*"] 
+
 
 
 # Application definition
@@ -50,9 +48,6 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware', # new
     'django.middleware.common.CommonMiddleware', # new
     'django.middleware.security.SecurityMiddleware',
-    #vvvv AFTER vvvv
-    "whitenoise.middleware.WhiteNoiseMiddleware",
-    #^^^AFTER^^^^
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -128,21 +123,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 # BEFORE
-# STATIC_URL = 'static/'
+STATIC_URL = 'static/'
 
-#AFTER
-STATIC_URL = "static/"
-STATIC_ROOT = BASE_DIR / "staticfiles"
-
-# AFTER
-STORAGES = {
-    "default": {
-        "BACKEND": "django.core.files.storage.FileSystemStorage",
-    },
-    "staticfiles": {
-        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
-    },
-}
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
