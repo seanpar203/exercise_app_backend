@@ -32,7 +32,6 @@ DEBUG = True
 ALLOWED_HOSTS = ["*"] 
 
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -65,9 +64,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         #old
-        # 'DIRS': [],
-        #new
-        'DIRS': [os.path.join(BASE_DIR, 'exercise_app', 'templates')],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -87,21 +84,13 @@ WSGI_APPLICATION = 'exerciseapp_project.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 #before
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
-
-# after
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
 
 
 # Password validation
@@ -141,16 +130,6 @@ USE_TZ = True
 # BEFORE
 STATIC_URL = '/static/'
 
-
-#AFTER
-
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static')
-]
-
-#AFTER^^^^^^^
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
