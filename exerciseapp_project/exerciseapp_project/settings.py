@@ -64,7 +64,10 @@ ROOT_URLCONF = 'exerciseapp_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        #old
+        # 'DIRS': [],
+        #new
+        'DIRS': [os.path.join(BASE_DIR, 'exercise_app', 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

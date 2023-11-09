@@ -1,6 +1,7 @@
 from django.db import models
 from multiselectfield import MultiSelectField
 
+
 class Cue(models.Model):
     exercise = models.ForeignKey('Exercise', on_delete=models.CASCADE)
     cues = models.JSONField()
