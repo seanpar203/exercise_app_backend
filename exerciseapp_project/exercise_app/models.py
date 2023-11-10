@@ -170,11 +170,3 @@ class Exercise(models.Model):
 
     def __str__(self):
         return self.name
-
-class Stretch(models.Model):
-    category = models.CharField(max_length=255)
-    name = models.CharField(max_length=255)
-    video = models.URLField(blank=True)
-
-    def __str__(self):
-        return self.name
