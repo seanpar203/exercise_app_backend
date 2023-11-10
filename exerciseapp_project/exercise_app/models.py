@@ -99,7 +99,7 @@ class Exercise(models.Model):
         (YOGABALL, 'Yoga Ball'),
         (FOAMROLLER, 'Foam Roller'),
         (PULLUP_BAR, 'Pull up bar'),
-        (BOX, 'Box')
+        (BOX, 'Box'),
         (BAR, 'Bar')
     ]
 
