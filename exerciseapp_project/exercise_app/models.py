@@ -166,7 +166,7 @@ class Exercise(models.Model):
     isa = MultiSelectField(max_length=255, choices=ISA_CHOICES, blank=False, null=False, default=BOTH)
     equipment = models.CharField(max_length=255, choices=EQUIPMENT_CHOICES, default=BODYWEIGHT, blank=False, null=False)
     video = models.URLField(blank=False, null=False)
-    exercise_cues = models.ManyToManyField(Cue, blank=True, related_name='cues_for_exercises')
+    # exercise_cues = models.ManyToManyField(Cue, blank=True, related_name='cues_for_exercises')
 
     # maybe add in categories for increased challenge level and decreased challenge level. have it as a linked list?
 
