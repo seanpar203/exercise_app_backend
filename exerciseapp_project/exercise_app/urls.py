@@ -4,7 +4,8 @@ from django.urls import path
 # from . import views
 
 #new
-from .views import ListCues, ListExercises, ListStretches
+from .views import ListCues, ListExercises
+# ListStretches
 
 
 urlpatterns = [
@@ -14,5 +15,5 @@ urlpatterns = [
 #new
     path('cues/', ListCues.as_view(), name='list_cues'),
     path('exercises/', ListExercises.as_view(), name='list_exercises'),
-    path('stretches/', ListStretches.as_view(), name='list_stretches'),
+    # path('stretches/', ListStretches.as_view(), name='list_stretches'),
 ]
