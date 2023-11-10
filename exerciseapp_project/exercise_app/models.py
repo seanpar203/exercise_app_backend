@@ -2,12 +2,12 @@ from django.db import models
 from multiselectfield import MultiSelectField
 
 
-class Cue(models.Model):
-    exercise = models.ForeignKey('Exercise', on_delete=models.CASCADE)
-    cues = models.JSONField()
+# class Cue(models.Model):
+#     exercise = models.ForeignKey('Exercise', on_delete=models.CASCADE)
+#     cues = models.JSONField()
 
-    def __str__(self):
-        return f"{self.exercise.name} - {self.experienceLevel} Cues"
+#     def __str__(self):
+#         return f"{self.exercise.name} - {self.experienceLevel} Cues"
 
 class Exercise(models.Model):
     UPPER_BODY_POSTERIOR = 'upper_body_posterior'
