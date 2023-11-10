@@ -1,6 +1,6 @@
 <h1>StrengthSidekick</h1>
 
-<h2>Check out this link for the front end repo</h2>
+<h4>Check out this link for the front end repo</h4>
 <p>Link:</p><a></a>
 
 <p>StrengthSidekick is a fitness application that harnesses the power of biomechanics to generate personalized workouts tailored to individual goals, experience levels, and available equipment. The app employs an algorithm designed to replicate the expertise of a personal trainer, ensuring that the generated workouts prioritize both effectiveness and efficiency.</p>
@@ -14,3 +14,14 @@
   
   <li><strong>Exercise Cues:</strong> The app provides detailed cues for each exercise to guide users in maintaining proper form and technique. These cues are stored in a separate model for easy management.</li>
 </ul>
+
+<h2>Tech</h2>
+
+<h2>Database:</h2>
+<p>The project uses PostgreSQL as the database management system. PostgreSQL is known for its robustness, extensibility, and support for complex queries.</p>
+
+<h2>Django Rest Framework (3.14.0):</h2>
+<p>Django Rest Framework (DRF) is a powerful and flexible toolkit for building Web APIs in Django applications. It extends Django's capabilities to handle serialization, authentication, permissions, and viewsets for API endpoints.</p>
+
+<h2>Django Multiselectfield (0.1.12):</h2>
+<p>This library provides a model and form fields for handling multiple selections in Django models. It's used in the project to handle multiple choices for fields such as fitness goals, experience levels, and workout locations.</p>
