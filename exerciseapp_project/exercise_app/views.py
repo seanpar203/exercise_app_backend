@@ -4,9 +4,9 @@ from .models import Cue, Exercise
 from .serializers import CueSerializer, ExerciseSerializer
 #tretchSerializer
 
-# class ListCues(generics.ListAPIView):
-#     queryset = Cue.objects.all()
-#     serializer_class = CueSerializer
+class ListCues(generics.ListAPIView):
+    queryset = Cue.objects.all()
+    serializer_class = CueSerializer
 
 class ListExercises(generics.ListAPIView):
     queryset = Exercise.objects.all()
