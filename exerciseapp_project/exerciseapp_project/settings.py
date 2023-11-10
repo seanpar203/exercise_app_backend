@@ -102,17 +102,28 @@ WSGI_APPLICATION = 'exerciseapp_project.wsgi.application'
 #     }
 # }
 
+DATABASE_URL = DATABASE_URL = os.getenv('postgres://postgres:c4B6eE-BAD*4e5eG6D6C2eGDcFaC-g-6@monorail.proxy.rlwy.net:40649/railway', None)
+
+
 #after
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'railway',
-        'USER': 'postgres',
-        'PASSWORD': 'c4B6eE-BAD*4e5eG6D6C2eGDcFaC-g-6',
-        'HOST': 'monorail.proxy.rlwy.net',
-        'PORT': '40649',
+if not DATABASE_URL:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'railway',
+            'USER': 'postgres',
+            'PASSWORD': 'c4B6eE-BAD*4e5eG6D6C2eGDcFaC-g-6',
+            'HOST': 'monorail.proxy.rlwy.net',
+            'PORT': '40649',
+        }
+    }
 
 
 # Password validation
