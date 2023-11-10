@@ -86,6 +86,7 @@ class Exercise(models.Model):
     FOAMROLLER = 'foamroller'
     PULLUP_BAR = 'pullup_bar'
     BOX = 'box'
+    BAR = 'bar'
     EQUIPMENT_CHOICES = [
         (KETTLEBELL, 'Kettle Bell'),
         (DUMBELL, 'Dumbell'),
@@ -99,6 +100,7 @@ class Exercise(models.Model):
         (FOAMROLLER, 'Foam Roller'),
         (PULLUP_BAR, 'Pull up bar'),
         (BOX, 'Box')
+        (BAR, 'Bar')
     ]
 
     GENERAL_FITNESS = 'general_fitness'
