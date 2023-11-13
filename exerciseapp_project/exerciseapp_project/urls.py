@@ -22,5 +22,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('exercise_app.urls')),
     path('exercise/', include('exercise_app.urls')),
-    path('', TemplateView.as_view(template_name='home.html'), name='home'),  # Add this line
 ]

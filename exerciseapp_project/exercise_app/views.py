@@ -2,7 +2,7 @@ from rest_framework import generics
 from .models import Cue, Exercise
 #Stretch
 from .serializers import CueSerializer, ExerciseSerializer
-#tretchSerializer
+#StretchSerializer
 
 class ListCues(generics.ListAPIView):
     queryset = Cue.objects.all()
