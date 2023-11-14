@@ -1,6 +1,6 @@
 <h1>StrengthSidekick</h1>
 
-<h4>Click <a href="https://github.com/bethjm/exercise_app_frontend">HERE</a> for the front end repo</h4>
+<h3>Click <a href="https://github.com/bethjm/exercise_app_frontend">HERE</a> for the front end repo</h3>
 
   <h3>Click <a href="https://www.loom.com/share/5293069034964ab19fcfabaf2758ea25">HERE</a> for a video walk through of the application and explanation of code logic</h3>
 
